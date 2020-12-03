@@ -1,0 +1,50 @@
+2020-12-01T14:18:17+00:00 CRITICAL Uncaught Error: Call to undefined function base_url() in C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-content\themes\the-yorkshire-refill-co\header.php:59
+Stack trace:
+#0 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\template.php(730): require_once()
+#1 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\template.php(676): load_template('C:\\Users\\chris....', true, Array)
+#2 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-content\themes\the-yorkshire-refill-co\index.php(16): get_header()
+#4 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\chris....')
+#5 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-blog-header.php(19): require_once('C:\\Users\\chris....')
+#6 C:\Use in C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-content\themes\the-yorkshire-refill-co\header.php on line 59
+
+2020-12-01T14:18:17+00:00 CRITICAL Uncaught Error: Call to undefined function base_url() in C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-content\themes\the-yorkshire-refill-co\header.php:59
+Stack trace:
+#0 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\template.php(730): require_once()
+#1 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\template.php(676): load_template('C:\\Users\\chris....', true, Array)
+#2 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-content\themes\the-yorkshire-refill-co\index.php(16): get_header()
+#4 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\chris....')
+#5 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-blog-header.php(19): require_once('C:\\Users\\chris....')
+#6 C:\Use in C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-content\themes\the-yorkshire-refill-co\header.php on line 59
+
+2020-12-01T14:18:19+00:00 CRITICAL Uncaught Error: Call to undefined function base_url() in C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-content\themes\the-yorkshire-refill-co\header.php:59
+Stack trace:
+#0 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\template.php(730): require_once()
+#1 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\template.php(676): load_template('C:\\Users\\chris....', true, Array)
+#2 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-content\themes\the-yorkshire-refill-co\index.php(16): get_header()
+#4 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\chris....')
+#5 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-blog-header.php(19): require_once('C:\\Users\\chris....')
+#6 C:\Use in C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-content\themes\the-yorkshire-refill-co\header.php on line 59
+
+2020-12-01T14:18:19+00:00 CRITICAL Uncaught Error: Call to undefined function base_url() in C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-content\themes\the-yorkshire-refill-co\header.php:59
+Stack trace:
+#0 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\template.php(730): require_once()
+#1 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\template.php(676): load_template('C:\\Users\\chris....', true, Array)
+#2 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-content\themes\the-yorkshire-refill-co\index.php(16): get_header()
+#4 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\chris....')
+#5 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-blog-header.php(19): require_once('C:\\Users\\chris....')
+#6 C:\Use in C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-content\themes\the-yorkshire-refill-co\header.php on line 59
+
+2020-12-01T14:18:19+00:00 CRITICAL Uncaught Error: Call to undefined function base_url() in C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-content\themes\the-yorkshire-refill-co\header.php:59
+Stack trace:
+#0 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\template.php(730): require_once()
+#1 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\template.php(676): load_template('C:\\Users\\chris....', true, Array)
+#2 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-content\themes\the-yorkshire-refill-co\index.php(16): get_header()
+#4 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\chris....')
+#5 C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-blog-header.php(19): require_once('C:\\Users\\chris....')
+#6 C:\Use in C:\Users\chris.davies\Local Sites\theyorkshirerefillco\app\public\wp-content\themes\the-yorkshire-refill-co\header.php on line 59
+

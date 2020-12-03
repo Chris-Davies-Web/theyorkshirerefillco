@@ -1,0 +1,64 @@
+
+@import 'variables';
+@import 'mixins';
+
+.hero{
+  
+    background: $light-brown;
+    background: linear-gradient(90deg, $light-beige 0%, $light-beige 50%, $light-brown 50.01%, $light-brown 100%);
+    font-weight: bold;
+    .row{
+        > div{
+            &:first-of-type{
+                background-color: $light-beige;
+            }
+            &:last-of-type{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $light-brown;
+                .copy-container{
+                    margin-bottom: 100px;
+                    max-width: 75%;;
+                    h1{
+                        color: $white;
+                        @include didot;
+                    }
+                    .cta{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    img{
+        width: 100%;
+    }
+
+}
+.how-we-work{
+    background-color: $white;
+    h2{
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        width: 100%;
+        font-weight: bold;
+        color: $brown;
+    }
+}
+
+.about-me{
+    img{
+        width: 100%;
+    }
+}
+
+.popular-products{
+    background-color: $beige;
+}
+
+.sustainable-living{
+    background-color: $beige;
+}

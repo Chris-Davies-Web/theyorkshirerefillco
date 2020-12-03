@@ -1,0 +1,55 @@
+
+@import './variables';
+@import './mixins';
+
+* {
+    @include montserrat;
+    color: $globalBrown;
+}
+
+html{
+    body{
+        overflow-x: hidden;
+        .container{
+            max-width: 1200px;
+        }
+
+        @include mobile{
+            .hide-on-mobile{
+                display: none;
+            }
+        }
+
+        .cta{
+                position: relative;
+                display: block;
+                text-align: center;
+                line-height: 45px;
+                text-transform: uppercase;
+                font-weight: 400;
+                background: transparent;
+                min-width: 130px;
+                max-width: 200px;
+                margin: 20px auto;
+            &.cta-primary{
+                border: 2px solid $white;
+                a{
+                    color: $white;
+                }
+            }
+
+            &.cta-secondary{
+                border: 2px solid $brown;
+                a{
+                    color: $brown;
+                }
+            }
+            &.cta-tertiary{
+                border: 2px solid $light-brown;
+                a{
+                    color: $light-brown;
+                }
+            }
+        }
+    }
+}

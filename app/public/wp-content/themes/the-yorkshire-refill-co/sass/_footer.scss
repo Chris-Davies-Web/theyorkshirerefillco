@@ -1,0 +1,170 @@
+
+@import './variables';
+@import './mixins';
+
+footer{
+    background-color: $light-brown;
+    .footer-widgets{
+        position: relative;
+        overflow: hidden;
+        h4{
+            @include didot;
+            font-style: italic;
+            color: $white;
+            @include tablet{
+                font-size: 13px;
+            }
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+        ul{
+            list-style: none;
+            padding: 0; 
+             margin: 0;
+            a{
+                color: $white;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 35px;
+                @include tablet{
+                    font-size: 12px;
+                }
+                @include mobile{
+                    font-size: 12px;
+                    line-height: 25px;
+                }
+            }
+        }
+        .follow-us, .get-around, .newsletter{
+            margin-top: 100px;
+            @include mobile{
+                margin: 10vw auto 0;
+            }
+        }
+        .newsletter{
+            > .row{
+                flex-direction: column;
+            }
+            h4{
+                margin-bottom: 45px;
+                
+                @include mobile{
+                    margin-bottom: 6vw;
+                }
+            }
+            form{
+                position: relative;
+                &:after{
+                    content: '';
+                    width: 98%;
+                    height: 1px;
+                    background: $white;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    max-width: 252px;
+                }
+                input{
+                    background: transparent;
+                    border: none;
+                    caret-color: $white;
+                    outline: none;
+                    color: $white;
+                    font-size: 14px;
+                    
+                    @include tablet{
+                        font-size: 12px;
+
+                    }
+                    &::placeholder{
+                        color: $white;
+                        font-size: 14px;
+                        font-weight: 200;
+                        @include tablet{
+                            font-size: 12px;
+    
+                        }
+                    }
+
+                
+                    
+                }
+                button{
+                    background: transparent;
+                    border: none;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $white;
+                }
+            }
+            @include mobile{
+                order:1;
+            }
+        }
+        .follow-us{
+            @include mobile{
+                order:2;
+            }
+        }
+        .get-around{
+            @include mobile{
+                order:2;
+            }
+        }
+        
+        .logo{
+            @include mobile{
+                opacity: 0.2;
+                position: absolute;
+                top: -50px;
+                max-width: 360px;
+                margin: auto;
+                left: 0;
+                right: 0;
+                pointer-events: none;
+            }
+            img{
+                width: 100%;
+                position: relative;
+            }
+
+        }
+        
+        .footer-menu{
+            width: 100%;
+            ul{
+                flex-direction: row;
+                display: flex;
+                justify-content: flex-end;
+                @include tablet{
+                    justify-content: center;
+                }
+                
+                @include mobile{
+                    justify-content: center;
+                }
+                
+                li{
+                    padding: 20px;
+                    text-align: center;
+                    @include mobile{
+                        padding: 3vw;
+                        white-space: nowrap;
+                        margin-top: 10vw;
+                    }
+                    a{
+                        font-size: 14px;
+                        @include tablet{
+                            font-size: 12px;
+                        }
+                        
+                        @include mobile{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

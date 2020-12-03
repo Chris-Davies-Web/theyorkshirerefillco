@@ -1,0 +1,36 @@
+
+@import 'variables';
+
+// Breakpoints
+@mixin mobile {
+	@media screen and (max-width: #{$breakpoint-mobile}) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media screen and (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop}) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media screen and (min-width: #{$breakpoint-tablet}) {
+		@content;
+	}
+}
+
+@mixin largeDesktop {
+	@media screen and (min-width: #{$breakpoint-large-desktop}) {
+		@content;
+	}
+}
+
+
+// Fonts
+@mixin didot{
+	font-family: 'GFS Didot', serif;
+}
+
+@mixin montserrat{
+	font-family: 'Montserrat', sans-serif;
+}
+

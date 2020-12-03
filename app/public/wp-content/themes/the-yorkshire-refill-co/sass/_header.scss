@@ -1,0 +1,240 @@
+
+@import 'variables';
+@import 'mixins';
+
+.top-bar{
+    background: $white;
+    .second-column{
+        .row:nth-of-type(1){
+            justify-content: center;
+            a.tablet-icon{
+                display: none;
+                @include tablet{
+                    display: flex;
+                    justify-content: center;
+                    margin-left: 10%;
+                    img{
+                        width: 320px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    .row:nth-of-type(2){
+        
+        @include mobile{
+            .col-12:first-of-type{
+                padding: 0;
+            }
+        }
+        .mobile-icon{
+            display: none;
+            @include mobile{
+                display: block;
+                margin: 10px auto;
+                width: 100%;
+                z-index: 3;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        nav{
+            &.main-menu{
+                @include mobile{
+                    padding: 0;
+                    position: absolute;
+                    top: 4vw;
+                    button{
+                        border: none;
+                        outline: none;
+                    }
+                }
+                ul.navbar-nav.nav{
+                        width: 100%;
+                        justify-content: space-between;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        flex-wrap: nowrap;
+
+                        @include mobile{
+                            padding: 0;
+                            margin: 0;
+                            background: $white;
+                            font-size: 12px;
+                            padding-left: 22px;
+                            padding-top: 30px;
+                            padding-bottom: 20px;
+                            z-index: 2;
+                            position: relative;
+                            box-shadow: -1px 6px 6px -3px $brown;
+                            
+                        }
+                        li{
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                            z-index: 1;
+
+                            span{
+                                position: relative;
+                                z-index: 1;
+                            }
+                            @include desktop{
+                                &:not(:nth-of-type(4)){
+                                    &::after{
+                                        content: "";
+                                        background-image: linear-gradient(120deg, $light-beige 0%, $beige 100%);
+                                        width: 100%;
+                                        height: 0px;
+                                        bottom: 34px;
+                                        border-radius: 1px;
+                                        position: absolute;
+                                        z-index: 0;
+                                        transition: height 0.1s ease-in;
+                                    }
+                                    
+
+                                &:hover{
+                                        &::after{
+                                            height: 3px;
+                                            transition: height 0.1s ease-in;
+                                        
+                                        }
+                                }
+                            }
+                                    
+
+                            @include desktop{
+                                    &.active{
+                                        font-weight: bold;
+                                        font-size: 16px;
+                                        &::after{
+                                            height: 15px;
+                                            bottom: 28px;
+                                        }
+                                    }
+                                }
+                            }
+                            @include mobile{
+                                &.active{
+                                    font-weight: bold;
+                                    font-size: 16px;
+                                    &::after{
+                                        content: "";
+                                        background-image: linear-gradient(120deg, $light-beige 0%, $beige 100%);
+                                        width: 40%;
+                                        height: 9px;
+                                        bottom: 13px;
+                                        border-radius: 1px;
+                                        position: absolute;
+                                    }
+                                }
+                            }
+                            @include desktop{
+                                text-align: center;
+                                justify-content: center;
+                            }
+                            &:nth-of-type(4){
+                                a{
+                                    height: 100%;
+                                }
+                            @include desktop{
+                                display: block;
+                                
+                                    span{
+                                        display: none;
+                                    }
+                                    background-image: url("img/png/MAIN-LOGO-DARK-BROWN.png");
+                                    background-size: contain;
+                                    max-width: 300px;
+                                    width: 35%;
+                                    background-repeat: no-repeat;
+                                    height: 80px;
+                                    position: relative;
+                                    top: -3px;
+
+                                }
+
+                                @include mobile{
+                                    display: none;
+                                }
+                                @include tablet{
+                                    display: none;
+                                }
+
+                            
+                            }
+                            @include tablet{
+                                &:not(:nth-of-type(4)){
+                                font-size: 12px;
+                                    margin: 0 5px;
+                                        &::after{
+                                            bottom: 13px;
+                                        }
+                                    &.active{
+                                        font-weight: bold;
+                                        font-size: 14px;
+                                        &::after{
+                                            height: 10px;
+                                            bottom: 10px;
+                                        }    
+                                    }
+                                }
+                            }
+                        }    
+                    }
+                }
+            }
+        }
+        
+    }
+
+   .account{
+       @include mobile{
+           position: absolute;
+       }
+       ul{
+           li{
+               font-size: 12px;
+               a{
+                   color: $brown;
+                   font-weight: 400;
+               }
+           }
+       }
+   }
+
+   .third-column{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include tablet{
+            align-items: flex-end;
+            margin-bottom: 14px;
+        }
+        @include mobile{
+            position: absolute;
+            right: 0;
+            top: 20px;
+        }
+        .cart{
+            position: relative;
+            .cart-icon{
+                background: url('img/svg/cart.svg');
+                background-repeat: no-repeat;
+                height: 25px;
+                width: 25px;
+                display: inline-block;
+                vertical-align: bottom;
+            }
+            .items{
+                position: absolute;
+                right: 6px;
+                color: $white;
+                font-size: 12px;
+            }
+        }
+   }
+}
